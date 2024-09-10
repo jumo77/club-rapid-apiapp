@@ -41,7 +41,7 @@ public class SecurityConfig {
                 .formLogin(AbstractHttpConfigurer::disable)
 //        경로별 권한 부여
                 .authorizeHttpRequests((auth)-> auth
-                        .requestMatchers("/login", "/", "/join","/maindata","/frontend","/backend","/mobile").permitAll()
+                        .requestMatchers("/login", "/", "/member","/maindata","/frontend","/backend","/mobile").permitAll()
                         .requestMatchers("/admin").hasRole("admin")
                         .anyRequest().authenticated())
 //        filter UPAF -> 커스텀 필터(LoginFilter), jwtUtil 주입
