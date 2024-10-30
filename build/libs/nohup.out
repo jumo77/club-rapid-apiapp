@@ -1,0 +1,345 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2024-10-14T03:44:10.320Z  INFO 170621 --- [           main] xyz.rapid.RapidApplication               : Starting RapidApplication v0.2 using Java 17.0.12 with PID 170621 (/home/ubuntu/club-rapid-apiapp/build/libs/RapidBack-0.2.jar started by ubuntu in /home/ubuntu/club-rapid-apiapp/build/libs)
+2024-10-14T03:44:10.330Z  INFO 170621 --- [           main] xyz.rapid.RapidApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-10-14T03:44:12.089Z  INFO 170621 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-14T03:44:12.251Z  INFO 170621 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 147 ms. Found 3 JPA repository interfaces.
+2024-10-14T03:44:13.579Z  INFO 170621 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (https)
+2024-10-14T03:44:13.614Z  INFO 170621 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-14T03:44:13.615Z  INFO 170621 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-10-14T03:44:13.674Z  INFO 170621 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-14T03:44:13.676Z  INFO 170621 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3203 ms
+2024-10-14T03:44:13.975Z  INFO 170621 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-14T03:44:14.067Z  INFO 170621 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-10-14T03:44:14.123Z  INFO 170621 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-14T03:44:14.526Z  INFO 170621 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-14T03:44:14.620Z  INFO 170621 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-14T03:44:15.175Z  INFO 170621 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b9b17ce
+2024-10-14T03:44:15.179Z  INFO 170621 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-14T03:44:17.115Z  INFO 170621 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-14T03:44:17.120Z  INFO 170621 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-14T03:44:18.145Z  WARN 170621 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-14T03:44:18.637Z  INFO 170621 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4e312811, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@71f042b1, org.springframework.security.web.context.SecurityContextHolderFilter@48dc9950, org.springframework.security.web.header.HeaderWriterFilter@108fd5d5, org.springframework.web.filter.CorsFilter@77511e9c, org.springframework.security.web.authentication.logout.LogoutFilter@3d2b8e, xyz.rapid.jwt.JWTFilter@32182bf8, xyz.rapid.jwt.LoginFilter@75aeec0a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@535aa7c7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@578781f7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b8cdc4, org.springframework.security.web.session.SessionManagementFilter@28b47211, org.springframework.security.web.access.ExceptionTranslationFilter@25c98637, org.springframework.security.web.access.intercept.AuthorizationFilter@35d145fb]
+2024-10-14T03:44:19.438Z  INFO 170621 --- [           main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [/home/ubuntu/.keystore] using alias [tomcat] with trust store [null]
+2024-10-14T03:44:19.463Z  INFO 170621 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (https) with context path ''
+2024-10-14T03:44:19.494Z  INFO 170621 --- [           main] xyz.rapid.RapidApplication               : Started RapidApplication in 10.112 seconds (process running for 11.318)
+2024-10-14T03:44:20.307Z  INFO 170621 --- [nio-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-14T03:44:20.308Z  INFO 170621 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-14T03:44:20.310Z  INFO 170621 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+2024-10-14T05:15:53.478Z  WARN 170621 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m13s54ms680µs237ns).
+2024-10-14T05:16:23.562Z  WARN 170621 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m10s881ms932µs112ns).
+Incorrect token
+2024-10-14T06:32:15.802Z  INFO 170621 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-14T06:32:15.822Z  INFO 170621 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-14T06:32:15.887Z  INFO 170621 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2024-10-14T06:53:02.874Z  INFO 1767 --- [           main] xyz.rapid.RapidApplication               : Starting RapidApplication v0.2 using Java 17.0.12 with PID 1767 (/home/ubuntu/club-rapid-apiapp/build/libs/RapidBack-0.2.jar started by ubuntu in /home/ubuntu/club-rapid-apiapp/build/libs)
+2024-10-14T06:53:02.883Z  INFO 1767 --- [           main] xyz.rapid.RapidApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-10-14T06:53:05.090Z  INFO 1767 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-14T06:53:05.262Z  INFO 1767 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 152 ms. Found 3 JPA repository interfaces.
+2024-10-14T06:53:06.850Z  INFO 1767 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (https)
+2024-10-14T06:53:06.894Z  INFO 1767 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-14T06:53:06.895Z  INFO 1767 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-10-14T06:53:06.962Z  INFO 1767 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-14T06:53:06.966Z  INFO 1767 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3900 ms
+2024-10-14T06:53:07.352Z  INFO 1767 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-14T06:53:07.480Z  INFO 1767 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-10-14T06:53:07.543Z  INFO 1767 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-14T06:53:08.157Z  INFO 1767 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-14T06:53:08.204Z  INFO 1767 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-14T06:53:08.955Z  INFO 1767 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6eeb29c0
+2024-10-14T06:53:08.958Z  INFO 1767 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-14T06:53:11.594Z  INFO 1767 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-14T06:53:11.602Z  INFO 1767 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-14T06:53:12.953Z  WARN 1767 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-14T06:53:13.635Z  INFO 1767 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@32182bf8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@75aeec0a, org.springframework.security.web.context.SecurityContextHolderFilter@578781f7, org.springframework.security.web.header.HeaderWriterFilter@4abb4041, org.springframework.web.filter.CorsFilter@6b8cdc4, org.springframework.security.web.authentication.logout.LogoutFilter@2bd158ea, xyz.rapid.jwt.JWTFilter@79e28671, xyz.rapid.jwt.LoginFilter@ad6255e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22e253c7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2480acc3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@81a56b2, org.springframework.security.web.session.SessionManagementFilter@48dc9950, org.springframework.security.web.access.ExceptionTranslationFilter@4125bc3c, org.springframework.security.web.access.intercept.AuthorizationFilter@4e312811]
+2024-10-14T06:53:14.486Z  INFO 1767 --- [           main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-8082], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [/home/ubuntu/.keystore] using alias [tomcat] with trust store [null]
+2024-10-14T06:53:14.517Z  INFO 1767 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (https) with context path ''
+2024-10-14T06:53:14.559Z  INFO 1767 --- [           main] xyz.rapid.RapidApplication               : Started RapidApplication in 12.888 seconds (process running for 14.453)
+2024-10-14T07:10:22.806Z  INFO 1767 --- [nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-14T07:10:22.808Z  INFO 1767 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-14T07:10:22.811Z  INFO 1767 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+Incorrect token
+Incorrect token
+2024-10-14T07:11:14.497Z  INFO 1767 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-14T07:11:14.508Z  INFO 1767 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-14T07:11:14.565Z  INFO 1767 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2024-10-14T07:12:35.264Z  INFO 1934 --- [           main] xyz.rapid.RapidApplication               : Starting RapidApplication v0.2 using Java 17.0.12 with PID 1934 (/home/ubuntu/club-rapid-apiapp/build/libs/RapidBack-0.2.jar started by ubuntu in /home/ubuntu/club-rapid-apiapp/build/libs)
+2024-10-14T07:12:35.282Z  INFO 1934 --- [           main] xyz.rapid.RapidApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-10-14T07:12:37.750Z  INFO 1934 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-14T07:12:37.982Z  INFO 1934 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 213 ms. Found 3 JPA repository interfaces.
+2024-10-14T07:12:39.744Z  INFO 1934 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (https)
+2024-10-14T07:12:39.795Z  INFO 1934 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-14T07:12:39.796Z  INFO 1934 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-10-14T07:12:39.892Z  INFO 1934 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-14T07:12:39.898Z  INFO 1934 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4409 ms
+2024-10-14T07:12:40.329Z  INFO 1934 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-14T07:12:40.497Z  INFO 1934 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-10-14T07:12:40.570Z  INFO 1934 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-14T07:12:41.138Z  INFO 1934 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-14T07:12:41.208Z  INFO 1934 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-14T07:12:42.064Z  INFO 1934 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1d2def55
+2024-10-14T07:12:42.069Z  INFO 1934 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-14T07:12:44.243Z  INFO 1934 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-14T07:12:44.251Z  INFO 1934 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-14T07:12:45.701Z  WARN 1934 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-14T07:12:46.579Z  INFO 1934 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@77511e9c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@32182bf8, org.springframework.security.web.context.SecurityContextHolderFilter@535aa7c7, org.springframework.security.web.header.HeaderWriterFilter@28b47211, org.springframework.web.filter.CorsFilter@75aeec0a, org.springframework.security.web.authentication.logout.LogoutFilter@930911e, xyz.rapid.jwt.JWTFilter@6b8cdc4, xyz.rapid.jwt.LoginFilter@79e28671, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7bbd944e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@22e253c7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ad6255e, org.springframework.security.web.session.SessionManagementFilter@247415be, org.springframework.security.web.access.ExceptionTranslationFilter@108fd5d5, org.springframework.security.web.access.intercept.AuthorizationFilter@6e757f39]
+2024-10-14T07:12:47.485Z  INFO 1934 --- [           main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-8082], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [/home/ubuntu/.keystore] using alias [tomcat] with trust store [null]
+2024-10-14T07:12:47.521Z  INFO 1934 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (https) with context path ''
+2024-10-14T07:12:47.581Z  INFO 1934 --- [           main] xyz.rapid.RapidApplication               : Started RapidApplication in 13.827 seconds (process running for 15.536)
+2024-10-14T07:14:28.673Z  INFO 1934 --- [nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-14T07:14:28.675Z  INFO 1934 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-14T07:14:28.679Z  INFO 1934 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2024-10-14T07:39:55.057Z  INFO 2328 --- [           main] xyz.rapid.RapidApplication               : Starting RapidApplication v0.2 using Java 17.0.12 with PID 2328 (/home/ubuntu/club-rapid-apiapp/build/libs/RapidBack-0.2.jar started by ubuntu in /home/ubuntu/club-rapid-apiapp/build/libs)
+2024-10-14T07:39:55.083Z  INFO 2328 --- [           main] xyz.rapid.RapidApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-10-14T07:39:57.503Z  INFO 2328 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-14T07:39:57.676Z  INFO 2328 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 157 ms. Found 3 JPA repository interfaces.
+2024-10-14T07:39:59.286Z  INFO 2328 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (https)
+2024-10-14T07:39:59.355Z  INFO 2328 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-14T07:39:59.356Z  INFO 2328 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-10-14T07:39:59.444Z  INFO 2328 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-14T07:39:59.447Z  INFO 2328 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4168 ms
+2024-10-14T07:39:59.934Z  INFO 2328 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-14T07:40:00.183Z  INFO 2328 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-10-14T07:40:00.294Z  INFO 2328 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-14T07:40:00.996Z  INFO 2328 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-14T07:40:01.056Z  INFO 2328 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-14T07:40:01.810Z  INFO 2328 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1fb6b8fb
+2024-10-14T07:40:01.815Z  INFO 2328 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-14T07:40:04.151Z  INFO 2328 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-14T07:40:04.159Z  INFO 2328 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-14T07:40:05.381Z  WARN 2328 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-14T07:40:06.301Z  INFO 2328 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@42d96745, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d1f168, org.springframework.security.web.context.SecurityContextHolderFilter@43f5b014, org.springframework.security.web.header.HeaderWriterFilter@17f7a1af, org.springframework.web.filter.CorsFilter@9e4388d, org.springframework.security.web.authentication.logout.LogoutFilter@5134a7d6, xyz.rapid.jwt.JWTFilter@28532753, xyz.rapid.jwt.LoginFilter@21399e53, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c59dfc7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40ed4674, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2a6871ad, org.springframework.security.web.session.SessionManagementFilter@3093161a, org.springframework.security.web.access.ExceptionTranslationFilter@13e5c53c, org.springframework.security.web.access.intercept.AuthorizationFilter@3dcf6026]
+2024-10-14T07:40:07.215Z  INFO 2328 --- [           main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [/home/ubuntu/.keystore] using alias [tomcat] with trust store [null]
+2024-10-14T07:40:07.261Z  INFO 2328 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (https) with context path ''
+2024-10-14T07:40:07.316Z  INFO 2328 --- [           main] xyz.rapid.RapidApplication               : Started RapidApplication in 13.44 seconds (process running for 14.693)
+2024-10-14T07:40:08.794Z  INFO 2328 --- [nio-8080-exec-8] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-14T07:40:08.795Z  INFO 2328 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-14T07:40:08.797Z  INFO 2328 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+2024-10-14T08:17:06.663Z  INFO 2328 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-14T08:17:06.690Z  INFO 2328 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-14T08:17:06.713Z  INFO 1934 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-14T08:17:06.739Z  INFO 1934 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-14T08:17:06.850Z  INFO 1934 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-14T08:17:06.857Z  INFO 2328 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2024-10-14T08:30:40.786Z  INFO 1321 --- [           main] xyz.rapid.RapidApplication               : Starting RapidApplication v0.2 using Java 17.0.12 with PID 1321 (/home/ubuntu/club-rapid-apiapp/build/libs/RapidBack-0.2.jar started by ubuntu in /home/ubuntu/club-rapid-apiapp/build/libs)
+2024-10-14T08:30:40.792Z  INFO 1321 --- [           main] xyz.rapid.RapidApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-10-14T08:30:42.863Z  INFO 1321 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-14T08:30:43.011Z  INFO 1321 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 124 ms. Found 3 JPA repository interfaces.
+2024-10-14T08:30:44.488Z  INFO 1321 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (https)
+2024-10-14T08:30:44.512Z  INFO 1321 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-14T08:30:44.512Z  INFO 1321 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-10-14T08:30:44.565Z  INFO 1321 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-14T08:30:44.567Z  INFO 1321 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3597 ms
+2024-10-14T08:30:44.902Z  INFO 1321 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-14T08:30:44.991Z  INFO 1321 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-10-14T08:30:45.048Z  INFO 1321 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-14T08:30:45.492Z  INFO 1321 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-14T08:30:45.551Z  INFO 1321 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-14T08:30:45.908Z  INFO 1321 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3dfe92ef
+2024-10-14T08:30:45.911Z  INFO 1321 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-14T08:30:47.552Z  INFO 1321 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-14T08:30:47.556Z  INFO 1321 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-14T08:30:48.412Z  WARN 1321 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-14T08:30:48.920Z  INFO 1321 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6e757f39, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4e312811, org.springframework.security.web.context.SecurityContextHolderFilter@247415be, org.springframework.security.web.header.HeaderWriterFilter@fbdba1c, org.springframework.web.filter.CorsFilter@71f042b1, org.springframework.security.web.authentication.logout.LogoutFilter@4cddc3d9, xyz.rapid.jwt.JWTFilter@77511e9c, xyz.rapid.jwt.LoginFilter@32182bf8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43735ea0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@535aa7c7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@75aeec0a, org.springframework.security.web.session.SessionManagementFilter@4125bc3c, org.springframework.security.web.access.ExceptionTranslationFilter@377cc0f8, org.springframework.security.web.access.intercept.AuthorizationFilter@3792fed8]
+2024-10-14T08:30:49.634Z  INFO 1321 --- [           main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [/home/ubuntu/.keystore] using alias [tomcat] with trust store [null]
+2024-10-14T08:30:49.652Z  INFO 1321 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (https) with context path ''
+2024-10-14T08:30:49.682Z  INFO 1321 --- [           main] xyz.rapid.RapidApplication               : Started RapidApplication in 9.738 seconds (process running for 10.689)
+2024-10-14T08:31:05.054Z  INFO 1321 --- [nio-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-14T08:31:05.055Z  INFO 1321 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-14T08:31:05.057Z  INFO 1321 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+2024-10-14T17:24:16.273Z  INFO 1321 --- [nio-8080-exec-3] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in the request target [/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello ]. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:482) ~[tomcat-embed-core-10.1.19.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:264) ~[tomcat-embed-core-10.1.19.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2024-10-29T03:55:27.588Z  INFO 817119 --- [           main] xyz.rapid.RapidApplication               : Starting RapidApplication v0.2 using Java 17.0.12 with PID 817119 (/home/ubuntu/club-rapid-apiapp/build/libs/RapidBack-0.2.jar started by ubuntu in /home/ubuntu/club-rapid-apiapp/build/libs)
+2024-10-29T03:55:27.607Z  INFO 817119 --- [           main] xyz.rapid.RapidApplication               : No active profile set, falling back to 1 default profile: "default"
+2024-10-29T03:55:30.126Z  INFO 817119 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-29T03:55:30.403Z  INFO 817119 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 253 ms. Found 3 JPA repository interfaces.
+2024-10-29T03:55:32.477Z  INFO 817119 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (https)
+2024-10-29T03:55:32.528Z  INFO 817119 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-29T03:55:32.529Z  INFO 817119 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-10-29T03:55:32.634Z  INFO 817119 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-29T03:55:32.638Z  INFO 817119 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4753 ms
+2024-10-29T03:55:33.138Z  INFO 817119 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-29T03:55:33.255Z  INFO 817119 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-10-29T03:55:33.324Z  INFO 817119 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-29T03:55:33.905Z  INFO 817119 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-29T03:55:34.011Z  INFO 817119 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-29T03:55:34.741Z  INFO 817119 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@274bae2c
+2024-10-29T03:55:34.751Z  INFO 817119 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-29T03:55:37.799Z  INFO 817119 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-29T03:55:37.808Z  INFO 817119 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-29T03:55:38.911Z  WARN 817119 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-29T03:55:39.584Z  INFO 817119 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@77511e9c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@32182bf8, org.springframework.security.web.context.SecurityContextHolderFilter@535aa7c7, org.springframework.security.web.header.HeaderWriterFilter@28b47211, org.springframework.web.filter.CorsFilter@75aeec0a, org.springframework.security.web.authentication.logout.LogoutFilter@930911e, xyz.rapid.jwt.JWTFilter@6b8cdc4, xyz.rapid.jwt.LoginFilter@79e28671, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7bbd944e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@22e253c7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ad6255e, org.springframework.security.web.session.SessionManagementFilter@247415be, org.springframework.security.web.access.ExceptionTranslationFilter@108fd5d5, org.springframework.security.web.access.intercept.AuthorizationFilter@6e757f39]
+2024-10-29T03:55:40.496Z  INFO 817119 --- [           main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [/home/ubuntu/.keystore] using alias [tomcat] with trust store [null]
+2024-10-29T03:55:40.529Z  INFO 817119 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (https) with context path ''
+2024-10-29T03:55:40.564Z  INFO 817119 --- [           main] xyz.rapid.RapidApplication               : Started RapidApplication in 14.013 seconds (process running for 15.5)
+2024-10-29T03:57:20.817Z  INFO 817119 --- [nio-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-29T03:57:20.818Z  INFO 817119 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-10-29T03:57:20.822Z  INFO 817119 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
+Incorrect token
