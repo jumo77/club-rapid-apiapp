@@ -20,7 +20,6 @@ public class DataJpaStore implements DataStore {
         this.dataRepository = dataRepository;
     }
 
-
     @Override
     public List<Data> retrieveAllByCategory(String category) {
         return dataRepository.findAllByCategory(category, Sort.by(Sort.Direction.ASC, "indes")).stream()

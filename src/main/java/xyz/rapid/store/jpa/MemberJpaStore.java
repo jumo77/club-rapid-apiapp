@@ -63,14 +63,14 @@ public class MemberJpaStore implements MemberStore {
     public void addTeam(String memberId, String teamId, Role role) {
         MemberJpo jpo = memberRepository.findById(memberId).get();
         jpo.setTeamJpo(new TeamJpo(teamStore.retrieve(teamId)));
-        jpo.setRole(role);
+//        jpo.setRole(role);
         memberRepository.save(jpo);
     }
 
     @Override
     public void changeRole(String id, Role role){
         MemberJpo jpo = memberRepository.findById(id).get();
-        jpo.setRole(role);
+//        jpo.setRole(role);
         memberRepository.save(jpo);
     }
 }

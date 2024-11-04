@@ -19,11 +19,9 @@ public class MemberDetail implements UserDetails {
     public Collection<? extends GrantedAuthority> getAuthorities() {
         Collection<GrantedAuthority> collection = new ArrayList<>();
 
-        collection.add(new GrantedAuthority() {
-            @Override
-            public String getAuthority() {
-                return memberJpo.getRole().toString();
-            }
+        collection.add((GrantedAuthority) () -> {
+//                return memberJpo.getRole().toString();
+            return memberJpo.getName();
         });
         return collection;
     }

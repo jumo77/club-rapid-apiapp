@@ -38,7 +38,7 @@ public class MemberJpo {
     private String grade;
 
 
-    private Role role=null;
+//    private Role role=null;
 
     @ManyToOne(targetEntity = TeamJpo.class, cascade = CascadeType.ALL)
     @JoinColumn(name = "team_id")

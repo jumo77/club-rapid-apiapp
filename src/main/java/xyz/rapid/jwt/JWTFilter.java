@@ -48,7 +48,7 @@ public class JWTFilter extends OncePerRequestFilter {
         MemberJpo member = new MemberJpo();
         member.setStdNum(jwtUtil.getUsername(token));
         member.setPassword("tempt");
-        member.setRole(Role.valueOf(jwtUtil.getRole(token)));
+//        member.setRole(Role.valueOf(jwtUtil.getRole(token)));
 
         MemberDetail memberDetail = new MemberDetail(member);
 
